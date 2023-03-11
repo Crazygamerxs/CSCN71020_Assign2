@@ -40,74 +40,52 @@ namespace Req001
 			Assert::AreEqual(expectedPerimeter, actualPerimeter, L"The perimeter of the rectangle should be 30");
 		}
 	
+		
 		TEST_METHOD(TestSetLengthWithValidInput)
 		{
-			// Arrange
+		
 			int length = 0;
-
-			// Act
 			setLength(50, &length);
-
-			// Assert
+			
 			Assert::AreEqual(50, length);
 		}
 
 		TEST_METHOD(TestSetLengthWithMinimumInput)
 		{
-			// Arrange
 			int length = 0;
-
-			// Act
 			setLength(1, &length);
 
-			// Assert
 			Assert::AreEqual(1, length);
 		}
 
 		TEST_METHOD(TestSetLengthWithMaximumInput)
 		{
-			// Arrange
 			int length = 0;
-
-			// Act
 			setLength(99, &length);
 
-			// Assert
 			Assert::AreEqual(99, length);
 		}
 		TEST_METHOD(TestSetWidthWithValidInput)
 		{
-			// Arrange
 			int width = 0;
-
-			// Act
 			setWidth(75, &width);
 
-			// Assert
 			Assert::AreEqual(75, width);
 		}
 
 		TEST_METHOD(TestSetWidthWithMinimumInput)
 		{
-			// Arrange
 			int width = 0;
-
-			// Act
 			setWidth(1, &width);
-
-			// Assert
+			
 			Assert::AreEqual(1, width);
 		}
 
 		TEST_METHOD(TestSetWidthWithMaximumInput)
 		{
-			// Arrange
 			int width = 0;
-
-			// Act
 			setWidth(99, &width);
 
-			// Assert
 			Assert::AreEqual(99, width);
 		}
 
